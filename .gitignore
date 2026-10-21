@@ -1,0 +1,10 @@
+# Entorno y credenciales
+.venv/
+.env
+__pycache__/
+.pytest_cache/
+*.pyc
+# Archivos sensibles y modelos binarios generados
+artifacts/*.joblib
+data/*.csv
+.DS_Store
