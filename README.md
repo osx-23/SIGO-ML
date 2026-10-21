@@ -41,3 +41,12 @@ pytest -q
 
 ## Producción
 Este ZIP es un starter técnico, no un despliegue productivo. Falta integrar a SIGO-BACK, logging, autorización de permisos por plaza, historial/auditoría de predicciones, gestión segura de artefactos y monitoreo del modelo. No publicar esta API sin protección de red/TLS y autenticación entre servicios.
+
+
+## Inventario (fase inicial)
+
+Se incorporó una auditoría de series de consumo mensual, con pruebas en GitHub
+Actions. **Todavía no se realiza pronóstico de inventario**: primero hay que
+validar los movimientos y contar con suficiente historial cerrado.
+
+Consulta [docs/INVENTARIO_FASE_1.md](docs/INVENTARIO_FASE_1.md).

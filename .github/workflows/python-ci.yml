@@ -18,3 +18,5 @@ jobs:
       - run: pytest -q
       - run: python -m training.generate_demo
       - run: python -m training.train --input data/dataset_demo.csv --demo
+      - run: python -m training.generate_demo_inventory
+      - run: python -m training.auditar_inventario --input data/dataset_inventario_demo.csv --fecha-corte 2026-10-21
