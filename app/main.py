@@ -1,9 +1,10 @@
 from fastapi import FastAPI, Depends, HTTPException
 from app.api.schemas import PrediccionAsistenciaRequest, PrediccionAsistenciaResponse
 from app.application.predictor import predict, load_artifact
+from app.application.auto_training import lifespan
 from app.core.security import require_internal_service
 
-app = FastAPI(title="SIGO-ML", version="0.1.0")
+app = FastAPI(title="SIGO-ML", version="0.1.0", lifespan=lifespan)
 
 
 @app.get("/health/live")
